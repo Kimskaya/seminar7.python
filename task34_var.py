@@ -13,6 +13,7 @@
 vowels = "аеёищуыэюя"
 def RightRithm(str):
     Countvowels = [sum(map(lambda letter: letter in vowels, word)) for word in str.split()]
+    return len(set(Countvowels))==1
     print (Countvowels)
 if RightRithm(input("Введите стихотворную строку  ")):
     print ("Парам пам-пам")
